@@ -1,7 +1,7 @@
-const Logo = () => {
+const Logo = ({user}) => {
     return (
         <span className="flex border rounded-full w-12 h-12 bg-gray-300 text-gray-600 items-center justify-center">
-            <p>A</p>
+            <p>{user.name[0]}</p>
         </span>
     )
 }
