@@ -1,24 +1,29 @@
-import {React, useState, useEffect} from 'react';
+import { React, useState, useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 import './styles/output.css';
-import Home from './components/Home';
-
-
-
+import Router from './components/Router';
 
 const App = () => {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users')
-      .then((response) => {
-        setUsers([...response.data])
-      })
-  }, [])
+        (async () => {
+            try {
+                const data = await axios.get('https://jsonplaceholder.typicode.com/users')
+                setUsers(data.data);
+            } catch (error) {
+                console.log(error)
+            }
+        })();
+    }, [])
+
   return (
-    <div>
-      <Home users={users}/>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Router users={users}/>
+      </div>
+    </BrowserRouter> 
   );
 }
 
