@@ -44,15 +44,15 @@ const User = () => {
                     <li>{"username:"}{" "}{user.username}</li>
                     <li>{"email:"}{" "}{user.email}</li>
                     <li>{"phone:"}{" "}{user.phone}</li>
-                    <li>{"company:"}{" "}{user.company & user.company.name ? user.company.name : ''}</li>
+                    <li>{"company:"}{" "}{user.company && user.company.name ? user.company.name : ''}</li>
                     <li>{"website:"}{" "}{user.website}</li>
                 
                     <li>{"address:"}</li>
                     <ul>
-                        <li>{"- street:"}{" "}{user.address.street}</li>
-                        <li>{"- suite:"}{" "}{user.address.suite}</li>
-                        <li>{"- city:"}{" "}{user.address.city}</li>
-                        <li>{"- zipcode:"}{" "}{user.address.zipcode}</li>
+                        <li>{"- street:"}{" "}{user.address && user.address.street ? user.address.street: ''}</li>
+                        <li>{"- suite:"}{" "}{user.address && user.address.suite ? user.address.suite: ''}</li>
+                        <li>{"- city:"}{" "}{user.address && user.address.city ? user.address.city: ''}</li>
+                        <li>{"- zipcode:"}{" "}{user.address && user.address.zipcode ? user.address.zipcode: ''}</li>
                     </ul>
                     
                 </ul> : <p className="text-lg">Loading data from server......</p>
