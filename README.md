@@ -1,7 +1,7 @@
 # About the app
 
 This app was created with React. The app displays users data in the form of cards. The data comes from the API [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users). The styling is done using Tailwind CSS framework 
-[https://tailwindcss.com/](https://tailwindcss.com/). The app is hosted at [https://relaxed-yonath-efed6a.netlify.app/](https://relaxed-yonath-efed6a.netlify.app/).
+[https://tailwindcss.com/](https://tailwindcss.com/). The app is hosted at [https://adoring-kepler-1dece1.netlify.app/](https://adoring-kepler-1dece1.netlify.app/).
 
 
 ### Installing the app
