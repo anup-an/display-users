@@ -48,7 +48,7 @@ const User = () => {
                     <li>{"website:"}{" "}{user.website}</li>
                 
                     <li>{"address:"}</li>
-                    <ul className="">
+                    <ul>
                         <li>{"- street:"}{" "}{user.address.street}</li>
                         <li>{"- suite:"}{" "}{user.address.suite}</li>
                         <li>{"- city:"}{" "}{user.address.city}</li>

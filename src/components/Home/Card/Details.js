@@ -3,7 +3,7 @@ const Details = ({user}) => {
         <span>
         <ul className="flex flex-col gap-y-3 items-center justify-center">
                 <li className="flex flex-col items-center justify-center">
-                    <p>{user.name}</p>
+                    <p className="font-bold">{user.name}</p>
                     <p className="italic text-sm text-gray-400">{`@${user.username}`}</p>
                 </li>
                 <li><a href={`http://${user.website}`} target="_blank" rel="noopener noreferrer">
